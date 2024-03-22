@@ -1,0 +1,130 @@
+
+@media (min-width: 1000px) and (max-width: 1280px) {
+    .container .methods-contact{
+        flex-direction: row;
+    }
+ }
+
+
+@media only screen and (max-width: 1000px){
+   
+    section .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 8px 16px;
+    }
+    header nav ul li{
+        margin: 0;
+    }
+    header .container > h2 {
+        margin-left: 15px;
+    }
+    
+    .logo-img {
+        margin: 0 0 20px 0;
+
+    }
+    #btn-nav{
+        display: block;
+    }
+    
+    #nav-store{
+        display: block;
+        position: absolute;
+        top: 68px;
+        right: 0px;
+        gap: .5rem;
+        transition: .5s;
+        z-index: 1000;
+        height: 0;
+        visibility: hidden;
+        overflow-y: hidden ;
+        
+    }
+    .menu.active {
+        background-color: #e7e7e7;
+    }
+    .menu.active #nav-store {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        visibility: visible;
+        overflow-y: auto;
+        background-color:  #1408726c;;
+    }
+    .menu a {
+        padding: 7px 7px;
+        margin: 10px 10px;
+    }
+    .menu li:hover {
+        background-color: #200ac7b9 ;
+    }
+
+    #btn-nav {
+        display: flex;
+        padding: 10px 16px;
+        font-size: 15px;
+        border: none;
+        background-color: #150872;
+        cursor: pointer;
+        gap: 10px
+    }
+
+    #hamburguer {
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+        color:#CDCDCD;
+    }
+
+    #hamburguer::after,
+    #hamburguer::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin-top: 5px;
+        background: currentColor;
+        transition: .3s;
+        position: relative;
+    }
+
+
+    .menu.active #hamburguer {
+        border-top-color: transparent;
+    }
+
+    .menu.active  #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+
+    .menu.active  #hamburguer::before {
+        transform: rotate(135deg);
+    }
+    #contact .container {
+        display: flex;
+    }
+
+    .container .methods-contact {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .form-contact form input,textarea,#form-button  {
+       
+    }
+
+
+
+
+
+  
+    
+
+
+
+    
+}
